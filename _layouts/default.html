@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh_cn">
+<html>
+
   {% include head.html %}
-<body>
-<!-- 导航菜单 -->
-  {% include navbar.html%}
 
-  <div class="container page-content">
-    {{content}}
-  </div>
+  <body>
 
-  {% include footer.html%}
+    <span class="mobile btn-mobile-menu">        
+      <div class="nav_container">
+         <nav class="nav-menu-item" style = "float:right">
+            <i class="nav-menu-item">
+              <a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">  {{site.blog_button.title}}
+              </a>
+            </i>
+            {% for item in site.nav %}
+                <i class="nav-menu-item">
 
-  {% include script.html %}
-  {% include baidu-analysis.html %}
-</body>
+                  <a href="{{item.url}}" title="{{item.description}}" class="btn-mobile-menu__icon">
+                      {{item.title}}
+                  </a>
+                </i>
+            {% endfor %}
+          </nav>
+      </div>
+    </span>
+    
+    {% include side-panel.html %}
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            {{ content }}
+            {% include footer.html %}
+        </div>
+    </div>
+    
+    {% include external.html %}
+    
+  </body>
+
 </html>
