@@ -1,0 +1,105 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-08-23 10:26:30
+ * @LastEditTime: 2020-09-17 11:56:56
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \opensource.microsoft.com\_includes\footer.html
+-->
+
+
+
+<div class="wrapper-full bg-dark">
+    <div class="py-6 my-6">
+        <div class="wrapper ">
+            <div class="d-md-flex flex-justify-between">
+                <div class="col-12 col-md-7 col-lg-7 mb-6 mb-md-0">
+                    <div class="text-white" data-animate-in="fade">
+                        <!--
+                        <a class="link-arrow mt-4" href="{{ '/collaborate/' | relative_url }}">Get involved</a>
+                        <br />
+                        <a class="link-arrow mt-4" href="{{ '/projects/' | relative_url }}">Explore projects</a>
+                        <br />
+                        <a class="link-arrow mt-4" href="{{ '/program/' | relative_url }}">Our program</a>
+                        <br />
+                        -->
+                        <a class="mt-4 link-arrow-external" href="https://twitter.com/OpenAtMicrosoft" target="_blank" rel= "noopener">
+                            <img class="mr-2" src="{{ '/assets/images/svgs/twitter.svg' | relative_url }}" alt="twitter icon" />
+                            Twitter
+                        </a>
+                        <br />
+                        <a class="mt-4 link-arrow-external" href="https://gitee.com/school_source__open_community/opensource.css.dgut.edu.cn.git" target="_blank" rel= "noopener">
+                            <img class="mr-2" src="{{ '/assets/images/svgs/github.svg' | relative_url }}" alt="twitter icon" />
+                            school_source__open_community/opensource.css.dgut.edu.cn
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 pl-md-4 pl-lg-2">
+                    <figure class="intro-svg">
+                        {% include open-source-svg-ft.html %}
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="wrapper d-lg-flex flex-justify-between flex-items-center">
+        <div class="site-footer__brand">
+            <!-- <img src="{{ '/assets/images/Microsoft-icon-white.svg' | relative_url }}" alt="Microsoft icon" /> -->
+            <img src="{{ '/assets/images/logo_simple.png' | relative_url }}" alt="Develop icon" />
+            <p>Powered by <a href="{{ '/thanks/' | relative_url }}">Open Source</a></p>
+        </div>
+
+        <!-- <ul>
+            <li>
+                <a href="https://aka.ms/opensource" onclick="return confirm('Are you sure you want to continue to https://aka.ms/opensource? This resource is restricted to Microsoft employees to share guidance and documentation about open source at Microsoft.\n\nIf you continue, you will be redirected to authenticate with Azure Active Directory, and the error messages may be confusing if you are not able to sign-in.')">Employee sign-in</a>
+            </li>
+            <li>
+                <a href="{{ '/codeofconduct/' | relative_url }}">Code of Conduct</a>
+            </li>
+            <li>
+                <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Privacy & Cookies</a>
+            </li>
+            <li>
+                <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx" target="_blank">Terms</a>
+            </li>
+            <li>
+                <a href="https://www.microsoft.com/trademarks" target="_blank">Trademarks</a>
+            </li>
+            <li>
+                <p>© <span id="year">2020</span> Microsoft</p>
+            </li>
+        </ul> -->
+        <ul>
+            <!-- <li>
+                <a href="https://aka.ms/opensource"
+                    onclick="return confirm('Are you sure you want to continue to https://aka.ms/opensource? This resource is restricted to Microsoft employees to share guidance and documentation about open source at Microsoft.\n\nIf you continue, you will be redirected to authenticate with Azure Active Directory, and the error messages may be confusing if you are not able to sign-in.')">员工登录</a>
+            </li>
+            <li>
+                <a href="{{ '/codeofconduct/' | relative_url }}">代码规范</a>
+            </li>
+            <li>
+                <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">隐私 & Cookies</a>
+            </li>
+            <li>
+                <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx"
+                    target="_blank">条款</a>
+            </li>
+            <li>
+                <a href="https://www.microsoft.com/trademarks" target="_blank">商标</a>
+            </li> -->
+            <li>
+                <p>© <span id="year">2020</span> DevelopCoding</p>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var date = new Date().getFullYear(),
+            year = document.getElementById('year');
+            if(year) {
+                document.getElementById('year').innerHTML = date;
+            }
+    </script>
+</footer>
